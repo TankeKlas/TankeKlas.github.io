@@ -1,0 +1,218 @@
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: dimgray;
+    background: #152733;
+  }
+  
+  section {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  P {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+  }
+  
+  H1 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 28px;
+  }
+  
+  figure {
+    margin: 0px;
+  }
+  
+  figure img {
+    height: auto;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  figure img:hover {
+    opacity: 0.6;
+    transition: all .3s linear;
+  }
+  .column {
+    box-sizing: border-box;
+    flex: 1 100%;
+    justify-content: space-evenly;
+    margin: 20px;
+  }
+  .card-style {
+    border-radius: 12px;
+    border-image-slice: 1;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+    transition: all 0.25s linear;
+    background: #ffffff;
+  }
+  .card-style:hover {
+    box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.8);
+  }
+  
+  .card-text {
+    padding: 20px;
+  }
+  
+  @media (min-width: 500px) {
+    .column {
+        flex: 0 0 calc(100%/2 - 40px);
+    }
+  }
+  
+  @media (min-width: 900px) {
+      .column {
+        flex: 0 0 calc(100%/4 - 40px);
+    }
+  }
+
+
+
+
+  .footer{
+    background-color: #24262b;
+    padding: 40px 0;
+    margin-top: 300px;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+
+main{
+  height: 500px;
+}
+
+
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav a {
+    display: block;
+    text-decoration: none;
+    outline: none; 
+  }
+  .topmenu {
+    backface-visibility: hidden;
+    background: #24262b;
+    text-align: center;
+  }
+  .topmenu > li {
+    display: inline-block;
+    position: relative;
+  }
+  .topmenu > li > a {
+    font-family: 'Exo 2', sans-serif;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 30px;
+    font-weight: bold;
+    color: yellow;
+    text-transform: uppercase;
+    transition: .4s ease-in-out;
+  }
+  .down:after {
+    content: "\f107";
+    margin-left: 8px;
+    font-family: FontAwesome;
+  }
+  .topmenu li a:hover {color: #E6855F;}
+  .submenu {
+    background: white;
+    border: 2px solid #003559;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    width: 150px;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: .6s ease-in-out;
+  }
+  .topmenu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+  }
+  .submenu li a {
+    color: #7f7f7f;
+    font-size: 13px;
+    line-height: 36px;
+    padding: 0 25px;
+    font-family: 'Kurale', serif;
+    transition: .4s ease-in-out;
+  }

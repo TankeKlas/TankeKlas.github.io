@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--подключение библиотеки иконок-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--подключение библиотеки bootstrap-->
+    <link rel="stylesheet" href="css/jquery.bxslider.css"> <!--Подключение библиотеки для создания слайдера-->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/registration.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="topmenu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="registration.html">Регистрация</a></li>
+          <li><a href="updates.html" class="down">Обновление</a>
+            <ul class="submenu">
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="FAQ.html">FAQ</a></li>
+              <li><a href="future.html">Дорожная карта</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="down">О нас</a>
+            <ul class="submenu">
+              <li><a href="ultra.html">Команда</a></li>
+              <li><a href="paper.html">Документация</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <aside class="responsive-banner second">
+        <div class="container-envelope">
+          <svg class="cirle-a" height="160" width="160">
+            <circle cx="80" cy="80" r="80"/>
+          </svg>
+           <svg class="cirle-b" height="60" width="60">
+            <circle cx="30" cy="30" r="30"/>
+          </svg>
+          <svg class="cirle-c" height="600" width="600">
+            <circle cx="300" cy="300" r="300"/>
+          </svg>
+         <svg class="cirle-d" height="60" width="60">
+            <circle cx="30" cy="30" r="30"/>
+          </svg>
+          <img src="https://i.pinimg.com/originals/f2/d1/f9/f2d1f900f688ddca0765ec8e2d3900e1.png" />
+          <div class="col-xs-12">
+            <p>Магазин «Ультраспорт» представляет вашему вниманию огромный выбор спорттоваров высокого качества.</p>
+            <a target="_blank" href="https://ultrasport.ru/catalog/velosipedy/" class="more-link">Ознакомиться</a>
+          </div>
+        </div>
+      </aside>
+      <aside class="responsive-banner third">
+        <div class="container-envelope">
+          <svg class="cirle-a" height="160" width="160">
+            <circle cx="80" cy="80" r="80"/>
+          </svg>
+           <svg class="cirle-b" height="60" width="60">
+            <circle cx="30" cy="30" r="30"/>
+          </svg>
+          <svg class="cirle-c" height="600" width="600">
+            <circle cx="300" cy="300" r="300"/>
+          </svg>
+         <svg class="cirle-d" height="60" width="60">
+            <circle cx="30" cy="30" r="30"/>
+          </svg>
+          <img src="https://i.pinimg.com/originals/f2/d1/f9/f2d1f900f688ddca0765ec8e2d3900e1.png" />
+          <div class="col-xs-12">
+            <p>Ростелеком -крупнейший в России интегрированный провайдер цифровых услуг и решений</p>
+            <a target="_blank" href="https://msk.rt.ru/lightplus" class="more-link">Ознакомиться</a>
+          </div>
+        </div>
+      </aside>
+      
+      <div class='box'>
+        <div class='box-form'>
+          <div class='box-login-tab'></div>
+          <div class='box-login-title'>
+            <div class='i i-login'></div><h2>Зарегестрироваться</h2>
+          </div>
+          <div class='box-login'>
+            <div class='fieldset-body' id='login_form'>
+              <button onclick="openLoginInfo();" class='b b-form i i-more' title='Mais Informações'></button>
+                <p class='field'>
+                <label for='user'>E-MAIL</label>
+                <input type='text' id='user' name='user' title='Username' />
+                <span id='valida' class='i i-warning'></span>
+              </p>
+                <p class='field'>
+                <label for='pass'>ПАРОЛЬ</label>
+                <input type='password' id='pass' name='pass' title='Password' />
+                <span id='valida' class='i i-close'></span>
+              </p>
+      
+                <label class='checkbox'>
+                  <input type='checkbox' value='TRUE' title='Keep me Signed in' /> Сохранить для следующего входа
+                </label>
+      
+                <input type='submit' id='do_login' value='Войти' title='Get Started' />
+            </div>
+          </div>
+        </div>
+        <div class='box-info'>
+                    <p><button onclick="closeLoginInfo();" class='b b-info i i-left' title='Back to Sign In'></button><h3>Нужна помощь?</h3>
+          </p>
+                    <div class='line-wh'></div>
+                    <button onclick="" class='b-support' title='Forgot Password?'> Забыли пароль</button>
+          <button onclick="" class='b-support' title='Contact Support'>Связаться с поддержкой</button>
+                    <div class='line-wh'></div>
+          <button onclick="" class='b-cta' title='Sign up now!'>Создать аккаунт</button>
+                </div>
+      </div>
+      
+      
+       
+    <footer class="footer">
+        <div class="container">
+         <div class="row">
+           <div class="footer-col">
+             <h4>Компания</h4>
+             <ul>
+               <li><a href="ultra.html">О нас</a></li>
+               <li><a href="registration.html">Регистрация</a></li>
+               <li><a href="contact.html">Контакты</a></li>
+               <li><a href="index.html">Главная</a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>Обновления</h4>
+             <ul>
+               <li><a href="future.html">Дорожная карта</a></li>
+               <li><a href="pay.html">Оплата</a></li>
+               <li><a href="FAQ.html">FAQ</a></li>
+               <li><a href="news.html">Новости</a></li>
+               <li><a href="#"></a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>Полезная информация</h4>
+             <ul>
+               <li><a href="paper.html">Документация</a></li>
+               <li><a href="#"></a></li>
+               <li><a href="#"></a></li>
+               <li><a href="#"></a></li>
+             </ul>
+           </div>
+           <div class="footer-col">
+             <h4>Социальные сети</h4>
+             <div class="social-links">
+               <a href="#"><i class="fa fa-telegram"></i></a>
+               <a href="#"><i class="fa fa-youtube"></i></a>
+               <a href="#"><i class="fa fa-twitter"></i></a>
+               <a href="#"><i class="fa fa-vk"></i></a>
+             </div>
+           </div>
+         </div>
+        </div>
+     </footer>
+     <script src="script/reg.js"></script>
+     <script src="script/jquery-3.6.4.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="script/jquery.bxslider.js"></script>
+    <script src="script/jquery.flexslider.js"></script>
+</body>
+</html>

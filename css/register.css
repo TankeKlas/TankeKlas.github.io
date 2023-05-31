@@ -1,0 +1,241 @@
+/* обратная связь*/
+body{
+  background: #152733;
+}
+.cont{
+    display: flex; /* делаем колонки в ряд */
+    align-items: center; /* выравниваем по центру */
+    justify-content: space-between; /* колонки растянутся на всю ширину */
+    background: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+}
+.left-side{
+    width: 25%; /* занимает 25% общей ширины */
+    height: 100%; /* растягиваем на всю высоту */
+    position: relative; /* позиционирование относительное (для ::before) */
+    display: flex;
+    flex-direction: column; /* внутри элементы располагаем в колонку */
+}
+.left-side::before {
+    content: ""; /* контент нам не нужен */
+    position: absolute; /* позиционируем относительно .left-side */
+    height: 70%; /* высота 70% от .left-side */
+    width: 2px; /* ширина 2px */
+    background: #afafb6;
+    right: -15px; /* позиционируем справа + отступ 15px (справа) */
+    top: 50%; /* выравниваем по центру */
+    transform: translateY(-50%); /* выравниваем по центру */
+  }
+  .right-side {
+    width: 75%; /* занимает 75% общей ширины */
+    margin-left: 75px;
+  }
+  .details {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .details i {
+    font-size: 25px; /* задаем размер */
+    color: #3e2093; /* задаем цвет */
+    margin-bottom: 10px;
+  }
+  .topic {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 7px; /* отступ снизу 7px */
+  }
+.text-one,
+.text-two {
+  font-size: 14px;
+  color: #afafb6;
+}
+.topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+    margin-bottom: 10px;
+  }
+.right-side p {
+    margin-bottom: 20px;
+}
+  .input-box {
+    height: 50px; /* по сути задаем высоту input'а */
+    width: 100%; /* ширина на всю ширину правой колонки (с учетом padding) */
+    margin-bottom: 20px; /* отступаем снизу 20px */
+  }
+.input-box input,
+.input-box textarea {
+    height: 100%; /* растягиваем на всю высоту контейнера 50px */
+    width: 100%; /* растягиваем на всю ширину */
+    border: none; /* убираем внешние края */
+    border-radius: 5px; /* скругляем края */
+    background: #f0f1f8; /* задаем цвет фона */
+    padding: 0 20px; /* отступ справа и слева 20px */
+  }
+  .input-box textarea {
+    resize: none; /* чтобы нельзя было менять высоту */
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+  .message-box {
+    min-height: 110px; /* минимальная высота 110px */
+  }
+  .button {
+    display: inline-block; /* делаем блочно-строчный элемент */
+  }
+  .button input[type="button"] {
+    color: #fff;
+    font-size: 18px;
+    background: #3e2093;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: 0.2s; /* чтобы плавно менялся цвет при наведении (:hover) */
+  }
+.button input[type="button"]:hover {
+    background: rgb(0, 0, 207);
+  }
+
+
+
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav a {
+    display: block;
+    text-decoration: none;
+    outline: none; 
+  }
+  .topmenu {
+    backface-visibility: hidden;
+    background: #24262b;
+    text-align: center;
+  }
+  .topmenu > li {
+    display: inline-block;
+    position: relative;
+  }
+  .topmenu > li > a {
+    font-family: 'Exo 2', sans-serif;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 30px;
+    font-weight: bold;
+    color: yellow;
+    text-transform: uppercase;
+    transition: .4s ease-in-out;
+  }
+  .down:after {
+    content: "\f107";
+    margin-left: 8px;
+    font-family: FontAwesome;
+  }
+  .topmenu li a:hover {color: #E6855F;}
+  .submenu {
+    background: white;
+    border: 2px solid #003559;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    width: 150px;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: .6s ease-in-out;
+  }
+  .topmenu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+  }
+  .submenu li a {
+    color: #7f7f7f;
+    font-size: 13px;
+    line-height: 36px;
+    padding: 0 25px;
+    font-family: 'Kurale', serif;
+    transition: .4s ease-in-out;
+  }
+
+
+
+  .footer{
+    background-color: #24262b;
+    padding: 5px 0;
+    margin-top: 100px;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }

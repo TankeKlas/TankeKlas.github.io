@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--подключение библиотеки иконок-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--подключение библиотеки bootstrap-->
+    <link rel="stylesheet" href="css/jquery.bxslider.css"> <!--Подключение библиотеки для создания слайдера-->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/pay.css"> <!--подключения файла со стилями-->
+     <!--подключения файла стилей меню-->
+    <title>Based tost</title><!--название сайта-->
+</head>
+<body>
+<div class="container d-flex justify-content-center mt-5 mb-5">
+
+            
+
+    <div class="row g-3">
+
+      <div class="col-md-6">  
+        
+        <span>Методы оплаты</span>
+        <div class="card">
+
+          <div class="accordion" id="accordionExample">
+            
+            <div class="card">
+              <div class="card-header p-0" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-light btn-block text-left collapsed p-3 rounded-0 border-bottom-custom" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="d-flex align-items-center justify-content-between">
+
+                      <span>СБП</span>
+                      <img src="images/sbp.webp" width="60">
+                      
+                    </div>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <input type="text" class="form-control" placeholder="Paypal email">
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header p-0">
+                <h2 class="mb-0">
+                  <button class="btn btn-light btn-block text-left p-3 rounded-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="d-flex align-items-center justify-content-between">
+
+                      <span>Кредитные карты</span>
+                      <div class="icons">
+                        <img src="images/mir1.png" width="60">
+                        <img src="images/apple.png" width="60">
+                        <img src="images/visa_mastercard.png" width="60">
+                      </div>
+                      
+                    </div>
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body payment-card-body">
+                  
+                  <span class="font-weight-normal card-text">Номер карты</span>
+                  <div class="input">
+
+                    <i class="fa fa-credit-card"></i>
+                    <input type="text" class="form-control" placeholder="0000 0000 0000 0000">
+                    
+                  </div> 
+
+                  <div class="row mt-3 mb-3">
+
+                    <div class="col-md-6">
+
+                      <span class="font-weight-normal card-text">Срок</span>
+                      <div class="input">
+
+                        <i class="fa fa-calendar"></i>
+                        <input type="text" class="form-control" placeholder="MM/YY">
+                        
+                      </div> 
+                      
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                      <span class="font-weight-normal card-text">CVC/CVV</span>
+                      <div class="input">
+
+                        <i class="fa fa-lock"></i>
+                        <input type="text" class="form-control" placeholder="000">
+                        
+                      </div> 
+                      
+                    </div>
+                    
+
+                  </div>
+
+                  <span class="text-muted certificate-text"><i class="fa fa-lock"></i> Your transaction is secured with ssl certificate</span>
+                 
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+          <span>Сумма</span>
+
+          <div class="card">
+
+            <div class="d-flex justify-content-between p-3">
+
+              <div class="d-flex flex-column">
+
+                <span>Ежемесячная оплата<i class="fa fa-caret-down"></i></span>
+                <a href="#" class="billing">Подписка на 12 месяцев</a>
+                
+              </div>
+
+              <div class="mt-1">
+                <sup class="super-price">$8,2</sup>
+                <span class="super-month">/Месяц</span>
+              </div>
+              
+            </div>
+
+            <hr class="mt-0 line">
+
+            <div class="p-3">
+
+              <div class="d-flex justify-content-between mb-2">
+
+                <span>Реферальная система</span>
+                <span>-$1.00</span>
+                
+              </div>
+
+              <div class="d-flex justify-content-between">
+
+                <span>Ожидание<i class="fa fa-clock-o"></i></span>
+                <span>1 минута</span>
+                
+              </div>
+              
+
+            </div>
+
+            <hr class="mt-0 line">
+
+
+            <div class="p-3 d-flex justify-content-between">
+
+              <div class="d-flex flex-column">
+
+                <span>Можете ознакомиться с другими тарифами</span>
+                <small>так будет лучше</small>
+                
+              </div>
+              <span></span>
+
+              
+
+            </div>
+
+
+            <div class="p-3">
+
+            <button class="btn btn-primary btn-block free-button">Пробный период 30 дней</button> 
+           <div class="text-center">
+             <a href="future.html">У вас есть промокод?</a>
+           </div>
+              
+            </div>
+
+
+
+            
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </div>
+
+</body>
+</html>

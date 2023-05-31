@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--подключение библиотеки иконок-->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--подключение библиотеки bootstrap-->
+    <link rel="stylesheet" href="css/jquery.bxslider.css"> <!--Подключение библиотеки для создания слайдера-->
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+  <nav>
+    <ul class="topmenu">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="registration.html">Регистрация</a></li>
+      <li><a href="updates.html" class="down">Обновление</a>
+        <ul class="submenu">
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="future.html">Дорожная карта</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html" class="down">О нас</a>
+        <ul class="submenu">
+          <li><a href="ultra.html">Команда</a></li>
+          <li><a href="paper.html">Документация</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">Контакты</a></li>
+    </ul>
+  </nav>
+<section class="contact" id="contact">
+    <div class="container">
+
+        <!-- content содержит содержимое формы -->
+        <div class="cont">
+  
+          <!-- Левая колонка: адрес, телефоны, email. Можете добавить свое -->
+          <div class="left-side">
+            <div class="address details">
+  
+              <!-- Вместо классов: название шрифтовых иконок (fontawesome.com) -->
+              <i class="fas fa-map-marker-alt"></i>
+  
+              <!-- topic - заголовок, text-one, text-two - текст -->
+              <div class="topic">Адрес</div>
+              <div class="text-one">г. Москва</div>
+              <div class="text-two">Пресненская наб., 8 стр. 1</div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Телефон</div>
+              <div class="text-one">8-800-555-35-35</div>
+              <div class="text-two">8-499-192-72-47</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">123abc@gmail.com</div>
+              <div class="text-two">lumber.her@gmail.com</div>
+            </div>
+          </div>
+  
+          <!-- Правая колонка: сама форма -->
+          <div class="right-side">
+  
+            <!-- Заголовок для формы -->
+            <div class="topic-text">Отправьте нам сообщение</div>
+  
+            <!-- Какой-то дополнительный текст -->
+            <p>
+              Если у вас есть какие-то вопросы или предложения по сотрудничеству -
+              заполните форму ниже
+            </p>
+  
+            <!-- Форма обратной связи -->
+            <form action="#">
+  
+              <!-- Каждый input для выравнивания вкладываем в блок input-box -->
+              <div class="input-box">
+                <input type="text" placeholder="Ваше имя" />
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Введите email" />
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Введите телефон" />
+              </div>
+              <div class="input-box message-box">
+                <textarea placeholder="Сообщение"></textarea>
+              </div>
+              <div class="button">
+                <input type="button" value="Отправить" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+</section>
+<footer class="footer">
+  <div class="container">
+   <div class="row">
+     <div class="footer-col">
+       <h4>Компания</h4>
+       <ul>
+         <li><a href="ultra.html">О нас</a></li>
+         <li><a href="registration.html">Регистрация</a></li>
+         <li><a href="contact.html">Контакты</a></li>
+         <li><a href="index.html">Главная</a></li>
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4>Обновления</h4>
+       <ul>
+         <li><a href="future.html">Дорожная карта</a></li>
+         <li><a href="pay.html">Оплата</a></li>
+         <li><a href="FAQ.html">FAQ</a></li>
+         <li><a href="news.html">Новости</a></li>
+         <li><a href="#"></a></li>
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4>Полезная информация</h4>
+       <ul>
+         <li><a href="paper.html">Документация</a></li>
+         <li><a href="#"></a></li>
+         <li><a href="#"></a></li>
+         <li><a href="#"></a></li>
+       </ul>
+     </div>
+     <div class="footer-col">
+       <h4>Социальные сети</h4>
+       <div class="social-links">
+         <a href="#"><i class="fa fa-telegram"></i></a>
+         <a href="#"><i class="fa fa-youtube"></i></a>
+         <a href="#"><i class="fa fa-twitter"></i></a>
+         <a href="#"><i class="fa fa-vk"></i></a>
+       </div>
+     </div>
+   </div>
+  </div>
+</footer>
+</body>
+</html>
